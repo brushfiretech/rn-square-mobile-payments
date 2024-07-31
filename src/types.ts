@@ -7,14 +7,14 @@ import {
 import type { BatteryLevel } from './enums';
 
 export type SquarePaymentParams = {
-  autoComplete: boolean;
+  autoComplete?: boolean;
   amountMoney: number;
   currency: number;
-  appFeeMoney: number;
-  locationId: string;
-  orderId: string;
-  note: string;
-  referenceId: string;
+  appFeeMoney?: number;
+  locationId?: string;
+  orderId?: string;
+  note?: string;
+  referenceId?: string;
 };
 
 export type SquarePayment = {
