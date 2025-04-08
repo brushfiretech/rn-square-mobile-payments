@@ -117,7 +117,7 @@ class SquareMobilePayments: RCTEventEmitter {
 
     let currency = Currency(curr)
     let amountMoney = Money(amount: UInt(amount), currency: currency)
-    var params = PaymentParameters(idempotencyKey: UUID().uuidString, amountMoney: amountMoney);
+    var params = PaymentParameters(idempotencyKey: UUID().uuidString, amountMoney: amountMoney, processingMode: ProcessingMode.onlineOnly);
 
     let optionalParams: [String: (Any) -> Void] = [
       "appFeeMoney": { if let val = $0 as? Int { params.appFeeMoney = Money(amount: UInt(val), currency: currency)} },
