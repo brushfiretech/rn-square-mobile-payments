@@ -51,7 +51,6 @@ class Mappers {
   class func mapFromModel(_ model: ReaderModel) -> String {
       switch model {
       case ReaderModel.contactlessAndChip: return "contactlessAndChip"
-      case ReaderModel.embedded: return "embedded"
       case ReaderModel.magstripe: return "magstripe"
       case ReaderModel.stand: return "stand"
       case ReaderModel.unknown: return "unknown"
